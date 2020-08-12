@@ -107,4 +107,6 @@ footer {
     margin-bottom: 50px;
     text-align: center;
 }
-
+#greeting-placeholder{
+    color:yellow;
+}
