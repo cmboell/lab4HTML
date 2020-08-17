@@ -38,8 +38,12 @@ if(coffeeRefill === 'yes'){
     coffeeReply = alert('Thank You Very Much!');
 } else if(coffeeRefill === 'no'){
     coffeeReply = alert('Better Refill It!')
-} else {
-    coffeReply = alert('Really Wondering about that coffee')
+}  else if(coffeeRefill === 'Yes'){
+  coffeeReply = alert('Very much appreciated')
+} else if(coffeeRefill === 'No'){
+coffeeReply = alert('Don`t forget to refill it!')
+}else {
+    coffeReply = alert('Really wondering about that coffee')
 }
 
 document.getElementById('greeting-placeholder').textContent = greeting;
