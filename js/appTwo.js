@@ -48,6 +48,7 @@ var howMany = function() {
       count = prompt('Please enter a number How many do you want?');
     }
 
+    console.log(typeof number);
     console.log('HowMany():', Number(count));
     return Number(count);
   }
