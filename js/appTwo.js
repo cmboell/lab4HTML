@@ -32,7 +32,15 @@ if(hourNow >= 18 && hourNow <= 24){
     greeting = 'Something went wrong!';
 }
 
-
+var coffeeRefill = prompt('Hello ' +  userName  + ' Did You Refill The Coffee?')
+var coffeeReply;
+if(coffeeRefill === 'yes'){
+    coffeeReply = alert('Thank You Very Much!');
+} else if(coffeeRefill === 'no'){
+    coffeeReply = alert('Better Refill It!')
+} else {
+    coffeReply = alert('Really Wondering about that coffee')
+}
 
 document.getElementById('greeting-placeholder').textContent = greeting;
 
