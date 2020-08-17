@@ -39,3 +39,47 @@ document.getElementById('greeting-placeholder').textContent = greeting;
 
 var header = document.getElementById('removeThis');
 header.remove();
+
+
+var howMany = function() {
+    var count = prompt('How Many slices?');
+  
+    while( count === '' || isNaN(count) ) {
+      count = prompt('Please enter a number How many do you want?');
+    }
+
+    console.log('HowMany():', Number(count));
+    return Number(count);
+  }
+  
+  var getItem = function() {
+    var order = prompt('What would you like to order?').toLowerCase;
+    var item;
+  
+    while (order !== 'pepperoni' && order !== 'cheese') {
+      order = prompt('Please enter "pepperoni" or "cheese"...');
+    }
+  
+    if (order === 'pepperoni') {
+      item = '<img src="images/pan-pizza-hut.jpg">';
+    } else if (order === 'cheese') {
+      item = '<img src="images/pic-food-20.jpg">';
+    }
+  console.log('getItem():', item);
+    document.write(item);
+    return item;
+  }
+  
+  var showOrder = function() {
+   
+  
+    for(var i = 0; i < total; i++) {
+      result = result + '<p>Model #' + i + ' ' + item + '</p>';
+    }
+    console.log('showOrder():', result)
+    return result;
+  }
+
+  howMany();
+  getItem();
+  showOrder();
